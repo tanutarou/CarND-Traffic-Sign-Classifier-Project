@@ -19,8 +19,11 @@ The goals / steps of this project are the following:
 [dist1]: ./imgs/dist1.png "train dist"
 [dist2]: ./imgs/dist2.png "valid dist"
 [dist3]: ./imgs/dist3.png "test dist"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[sign_bright]: ./imgs/sign_bright.png "sign_bright"
+[sign_contrast]: ./imgs/sign_contrast.png "sign_contrast"
+[sign_org]: ./imgs/sign_org.png "sign org"
+[sign_sharp]: ./imgs/sign_sharp.png "sign sharp"
+[sign_dataaug]: ./imgs/sign_dataaug.png "sign dataaug"
 
 
 ## Rubric Points
@@ -72,21 +75,28 @@ I decided to generate additional data because there is a bias in the data distri
 
 To add more data to the the data set, I used the following techniques.
 * brightness_transform
- * This transformation changes the image brightness randomly.
+  * This transformation changes the image brightness randomly.  
+  ![alt text][sign_org]
+  ![alt text][sign_bright]  
 * contrast_transform
- * This transformation changes the image contrast randomly.
+  * This transformation changes the image contrast randomly.  
+  ![alt text][sign_org]
+  ![alt text][sign_contrast]  
 * sharp_transform
- * This transformation changes the image sharpness randomly.
+  * This transformation changes the image sharpness randomly.  
+  ![alt text][sign_org]
+  ![alt text][sign_sharp]  
 * translation
- * This transformation shifts the image location randomly.
+  * This transformation shifts the image location randomly.
 * rotate_transform
- * This transformation rotates the image randomly.
+  * This transformation rotates the image randomly.
 * scale_transform
- * This transformation change the image scale randomly.
+  * This transformation change the image scale randomly.
 
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+  ![alt text][sign_org]
+  ![alt text][sign_dataaug]  
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
