@@ -15,14 +15,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[dist1]: ./imgs/dist1.png "train dist"
+[dist2]: ./imgs/dist2.png "valid dist"
+[dist3]: ./imgs/dist3.png "test dist"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -55,9 +53,9 @@ Three distributions looks almost same shape. But, there is a bias in the distrib
 This means this dataset have the number of label 2(Speed limit (50km/h)) is so large. However, the number of label 37(Go straight or left) looks so small amount of data. In train data, the number of label 2 is 2010 and the number of label 37 is 180. It is a big bias.
 So learning label 37 looks difficult. 
 
-![alt text][image1]
-![alt text][image2]
-![alt text][image3]
+![alt text][dist1]
+![alt text][dist2]
+![alt text][dist3]
 
 ### Design and Test a Model Architecture
 
