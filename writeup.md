@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [sign_org]: ./imgs/sign_org.png "sign org"
 [sign_sharp]: ./imgs/sign_sharp.png "sign sharp"
 [sign_dataaug]: ./imgs/sign_dataaug.png "sign dataaug"
-
+[test_imgs]: ./imgs/test_imgs.png "test_imgs"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -72,6 +72,7 @@ I used quick way, (pixel - 128) /128 for normalization.
 I do not convert the images to grayscale because it did not increase validation score.
 
 I decided to generate additional data because there is a bias in the data distributions.
+To do remove a bias, I especially generated the labels of small amount data. 
 
 To add more data to the the data set, I used the following techniques.
 * brightness_transform
@@ -137,15 +138,15 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
- * I choosed [Lenet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) because I learned it in this lecture and it is a simple DNN model. So I can change it easily.
+  * I choosed [Lenet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) because I learned it in this lecture and it is a simple DNN model. So I can change it easily.
 * What were some problems with the initial architecture?
- * Lenet-5 do not have any dropout layer. So the network will overfit easily. I need to add dropout layers.
+  * Lenet-5 do not have any dropout layer. So the network will overfit easily. I need to add dropout layers.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
- * I used validation accuracy to adjust architecture. But architecture decrease low validation accuracy.
+  * I used validation accuracy to adjust architecture. But architecture decrease low validation accuracy.
 * Which parameters were tuned? How were they adjusted and why?
- * I changed the position of dropout layers because it strongly affects validation accuracy. And I changed the number of augumented data. I think It is also affects validation accuracy.
+  * I changed the position of dropout layers because it strongly affects validation accuracy. And I changed the number of augumented data. I think It is also affects validation accuracy.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
- * I think dropout layers are important to improve validation accuracy. Lenet-5 without dropout layer overfit train data easily. It is not good property for better model. If I add dropout layer, It worked well. 
+  * I think dropout layers are important to improve validation accuracy. Lenet-5 without dropout layer overfit train data easily. It is not good property for better model. If I add dropout layer, It worked well. 
 
  
 
@@ -155,10 +156,8 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][test_imgs]
 
-The second image might be difficult to classify because 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
