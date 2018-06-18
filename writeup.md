@@ -15,6 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
+[signs]: ./imgs/signs.png "signs"
 [dist1]: ./imgs/dist1.png "train dist"
 [dist2]: ./imgs/dist2.png "valid dist"
 [dist3]: ./imgs/dist3.png "test dist"
@@ -46,6 +47,8 @@ signs data set:
 * The number of unique classes/labels in the data set is 43
 
 #### 2. Include an exploratory visualization of the dataset.
+
+![alt text][signs]
 
 Here is an exploratory visualization of the data set. These histograms show the distributions of labels in each dataset(train, validation, test).
 
