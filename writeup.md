@@ -25,6 +25,7 @@ The goals / steps of this project are the following:
 [sign_sharp]: ./imgs/sign_sharp.png "sign sharp"
 [sign_dataaug]: ./imgs/sign_dataaug.png "sign dataaug"
 [test_imgs]: ./imgs/test_imgs.png "test_imgs"
+[good_dist]: ./imgs/good_dist.png "good dist"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -99,6 +100,8 @@ Here is an example of an original image and an augmented image:
   ![alt text][sign_org]
   ![alt text][sign_dataaug]  
 
+And I get a better distribution of train dataset as a following image.
+  ![alt text][good_dist]  
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
