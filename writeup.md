@@ -129,7 +129,7 @@ My final model consisted of the following layers:
 
 To train the model, I used an Adam as optimizer because it is known as good choice on the first try. But recent year, [this research](https://arxiv.org/abs/1705.08292) says Adaptive optimization may be not better than SGD. So, we should consider other optimizer in practice. However, I have no time to do that.
 
-Next, I used batch_size=128 because I have enough memory to run this batch_size.
+Next, I used batch_size=128 because I have enough memory to run this batch_size. And I used number of epoch=100 because I considered it is enough epoch for this simple model.
 
 Finally, I used learning rate=0.001. I tried to change it, but the validation score did not improve.
 
@@ -176,7 +176,7 @@ Here are the results of the prediction:
 | Stop			| Stop      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. Pedistrians sign has little complex shape. So it might be difficult.
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. It is far from test set accuracy. I think these new images looks higher quality than test dataset. So the accuracy may be different. And Pedistrians sign has little complex shape. So it might be difficult.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
