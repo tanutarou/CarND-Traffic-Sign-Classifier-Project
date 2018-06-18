@@ -100,7 +100,8 @@ Here is an example of an original image and an augmented image:
   ![alt text][sign_org]
   ![alt text][sign_dataaug]  
 
-And I get a better distribution of train dataset as a following image.
+And I get a better distribution of train dataset as a following image.  
+
   ![alt text][good_dist]  
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
