@@ -162,6 +162,12 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][test_imgs]
 
+The first image might be easy to classify because it is clear and not rotated image.  
+The second image might be difficult to classify because it looks dark color and has little complex human shape.  
+The third image might be difficult to classify because it looks small and rotated image.  
+The fourth image might be easy to classify because it looks clear color.  
+The fifth image might be difficult to classify because it looks rotated image and has black spaces on the side.  
+
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
